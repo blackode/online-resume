@@ -1,0 +1,11 @@
+- title: hello@blackode.in
+  link: 'mailto: hello@blackode.in'
+  icon-class: "fa fa-envelope"
+
+- title: "09494507287"
+  link: 'phone: 09494507287'
+  icon-class: "fa fa-phone"
+
+- title: blackode.in
+  link: 'https://blackode.in'
+  icon-class: "fa fa-globe"

@@ -1,0 +1,35 @@
+<div class="container">
+    <h3 class="section-heading text-center "> Portfolio </h3>
+
+    <div class="portfolioFilter">
+
+        <a href="#" data-filter="*" class="current">All Opensource</a>
+        <a href="#" data-filter=".expack">Elixir Packages</a>
+        <a href="#" data-filter=".cli">Command Line Applications</a>
+        <a href="#" data-filter=".blackberry">BlackBerry</a>
+        <a href="#" data-filter=".elixir">Elixir</a>
+
+    </div>
+
+    <div class="portfolioContainer row" >
+
+        {% for item in include.items %}
+
+        <div class="card {{ item.class }} col-md-4 col-sm-6" id="portfolio-item">
+
+            <img class="card-img-top img-fluid " src="{{ item.img }}" alt="Card image cap">
+            <div class="card-body text-center ">
+                <h4 class="card-title text-center ">{{ item.name }}</h4>
+                <p class="card-text text-center ">{{ item.desc }}</p>
+                <a href="{{ item.url }}" class="btn btn-primary text-center btn-sm text-center ">Source Code </a>
+            </div>
+
+
+        </div>
+
+        {% endfor %}
+
+
+    </div>
+
+</div>

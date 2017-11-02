@@ -1,0 +1,64 @@
+- title: Full Stack Developer
+  period: 2017 - Present
+  company: Free Lancer
+  location: Ananthapur
+  description: >
+    Free Lancing on Backend Software Development, Web Development, Performance Engineering and Graphic Designing.
+    Experienced in Continuous Development and responsible for Code Performance and Code Refactoring. Played a Core Elixir Developer
+    role in CoAP Protocol Development - an Elixir open source library for IOT communication among the devices connected in Constrained
+    Networks.
+
+- title: Elixir Library Developer
+  period: 2016 (October- Dec)
+  company: Open Source Development
+  location: Ananthapur
+  description: >
+    I played a role as Elixir Developer for developing CoAP- Constrained Application Protocol. It is a Specialized web transfer protocol for
+    communicating across the devices connected in constrained networks. It is an open source library. It is an Elixir server/client Core Library.
+    IOT ( Internet Of Things )- Communication Module.
+
+
+- title: Core Elixir Developer/ FreeLancer
+  period: 2016 (August - October)
+  company: Ahamtech
+  location: Estonia
+  description: >
+    Developing the Industrial Automation Software- SCADA - Supervisory Control and Data Acquisition, a computer system for gathering and
+    analyzing real time data for Solar Plants. Used Phoenix/Elixir Framework for Server API development and EmberJs for Client API development.
+    My tasks include, performance enhancer, Core Elixir development, Data Visualisation using EmberJs and code refactoring. I served UI/Ux development
+    as well to an extent.
+
+- title: Front End Developer/ FreeLancer
+  period: 2015 June - December
+  company: SyTrue
+  location: USA
+  description: >
+    It is a Medical Data Analytics Company. They act like centralized Data Center for all the Hospitals and Doctors.
+    I played role as a Coffee script developer. My tasks include - designing the User Interface and Development. I am also responsible for Ajax
+    development and data visualisation. Technologies - EmberJs( JavaScript ), REST, Photoshop, Illustrator.
+
+- title: BlackBerry App Developer
+  period: 2014 Jun - 2015
+  company: Ahamtech
+  location: Ananthapur
+  description: >
+    Enterprise Mobile App Development including Hub Integartion. Developed 4 Major Applications - includes Instant Messaging and Project Management
+    Tools
+  apps:
+    - name: TB10
+      link: "https://github.com/Ahamtech/TB10"
+      desc: Telegram Chat Client for Instant Messaging and peer to peer authentication.
+
+    - name: Coterie
+      link: "https://github.com/Ahamtech/Coterie"
+      desc: Slack Client-Project Management Tool and Team communication
+
+    - name: Banana
+      link: "https://github.com/Ahamtech/Banana"
+      desc: Asana Client- Project Management Tool
+
+    - name: Kritus
+      link: "https://github.com/Ahamtech/Kritus"
+      desc: BaseCamp Client - Project Management Tool
+
+

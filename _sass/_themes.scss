@@ -1,0 +1,16 @@
+@mixin theme($name, $color1, $color2) {
+
+  .#{$name} {
+    background: linear-gradient(45deg,$color1,$color2);
+  }
+}
+
+$themes:(
+        theme-banana #ffd339 #ffc247 ,
+        theme-blue dodgerblue #1e83f2,
+        theme-cherry #dd2418 purple
+) !default;
+
+@each $name, $color1, $color2 in $themes {
+  @include theme($name, $color1, $color2);
+}

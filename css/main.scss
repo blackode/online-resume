@@ -1,0 +1,871 @@
+---
+---
+
+// author: Ankanna
+//email: bugboy@gmx.com
+
+//Importing _sass files
+
+@import "mixins";
+@import "generators";
+@import "variables";
+@import "themes";
+
+// end of importing
+
+%boxshadow {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+%nav-link {
+    color: $navigation-bar-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $navigation-bar-hover-color;
+    }
+}
+
+%box-shadow-container {
+    @extend %boxshadow;
+    background-color: #fff;
+    padding: 50px
+}
+
+%section-heading {
+    padding-bottom: 50px;
+    font-weight: bold;
+    color: #676869;
+}
+
+
+
+.social-media-bar {
+    padding-top: 10px;
+    padding-left: 70px;
+    padding-bottom: 30px;
+}
+
+.heading-font {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.regular-font {
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.theme-color {
+    color: $primary-color;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: $body-bg-color;
+    font-family: $regular-font, sans-serif;
+    font-size: larger;
+    position: relative;
+
+}
+
+h1 {
+
+    font-family: $heading-font;
+
+}
+
+p {
+    font-family: $regular-font;
+}
+
+.timeline {
+
+    border-left: 3px solid #00BCD4;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+    padding: 0 30px;
+
+    .item {
+        &:before {
+
+            content: "";
+            position: absolute;
+            left: -12px;
+            top: -2px;
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            background: #fff;
+            border: 3px solid #00BCD4;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: -6px;
+            top: 4px;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            background: #00BCD4;
+            z-index: 10;
+        }
+    }
+}
+
+#header {
+    min-height: 300px;
+    padding-bottom: 20px;
+}
+
+#hire {
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+
+#hireme {
+
+    background: dodgerblue;
+    width: 150px;
+    height: 75px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 150, 0.5), 0 6px 20px 0 rgba(0, 0, 150, 0.5);
+
+    }
+
+    a.hire-link {
+        @extend %nav-link;
+        &:after {
+            content: " :) ";
+            font-weight: bold;
+        }
+
+    }
+
+}
+
+// Loading Bar Animation
+
+$background-color: #4684ee;
+$loader-color: dodgerblue;
+$loader-size: 30vh;
+
+#loader {
+
+    color: $loader-color;
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-weight: bold;
+    font-size: $loader-size;
+    opacity: 0.8;
+    text-align: center;
+    min-width: 100%;
+    min-height: 100%;
+    padding-top: 300px;
+    span {
+        display: inline-block;
+        animation: pulse 0.4s alternate infinite ease-in-out;
+
+        &:nth-child(odd) {
+            animation-delay: 0.4s;
+        }
+    }
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
+
+// End Loading Bar Animation
+
+
+
+// Navigation Bar Section
+
+#navigation-bar {
+    background-color: $navigation-bar-bg-color;
+    //background: linear-gradient(141deg, #0faa9f 0%, #1eb2c5 51%, #2b99cb 75%);
+    padding: 10px;
+    margin-top: 0px;
+    max-height: 100px;
+
+    a.nav-link {
+
+        color: $navigation-bar-color;
+
+        &:hover {
+            color: $navigation-bar-hover-color;
+        }
+    }
+
+    a.active {
+        color: $navigation-bar-hover-color;
+    }
+
+}
+
+#navigation-bar.fixed-top {
+    background-color: #000;
+}
+
+// End Navigation Bar Section
+
+
+
+// Contacts Bar Section
+
+#contacts-bar {
+    background: $contacts-bar-bg-color;
+    color: $contacts-bar-color;
+    padding: 10px;
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    a.nav-link {
+        color: $contacts-bar-color;
+
+        &:hover {
+            color: $contacts-bar-hover-color;
+            text-decoration: wavy;
+
+        }
+    }
+}
+
+// End Contacts Bar Section
+
+// Profile Section
+
+.profile-name {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.profile-title {
+
+    color: lighten(dodgerblue, 30%);
+    padding-top: 20px;
+    font-size: (150%);
+    padding-bottom: 5px;
+}
+
+#profile-description p {
+
+    color: $profile-description-color;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: large;
+    text-align-last: center;
+}
+
+#profile-image img {
+
+    border: $profile-img-border-size solid $profile-img-border-color;
+    max-height: 150px;
+    max-width: 150px;
+    align-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+    &:hover {
+        border: ($profile-img-border-size + 5) solid $primary-color;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 150, 0.5), 0 6px 20px 0 rgba(0, 0, 150, 0.5);
+
+    }
+}
+
+// End Profile Section
+
+// icons section
+
+.contact-icon {
+    padding-right: 10px;
+}
+
+.contact-icon {
+    padding-right: 10px;
+}
+
+// End icon sections
+
+.section-heading {
+
+    @extend %section-heading;
+
+}
+
+.section {
+    margin-top: 60px;
+}
+
+// Experiences Section
+
+#experiences {
+    .container {
+        @extend %box-shadow-container;
+
+        .row {
+            padding-bottom: 2px;
+        }
+    }
+
+}
+
+.experience-title {
+    color: $primary-color;
+}
+
+.experience-description {
+    text-align-last: left;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: smaller;
+}
+
+.experience-icon-map-marker {
+    color: gray;
+    padding-right: 3px;
+}
+
+.mobile-apps {
+
+    padding-left: 100px;
+    padding-top: 10px;
+
+}
+
+// End experiences section
+
+// Skills Section
+
+#skills {
+
+    .container {
+        @extend %box-shadow-container;
+    }
+
+    .top-skills {
+        padding-top: 50px;
+    }
+
+    .skill-desc {
+        font-size: smaller;
+    }
+
+    .skills-title {
+        opacity: .5;
+    }
+
+    .other-skills {
+        padding-top: 100px;
+    }
+
+}
+
+.skill-tag {
+    padding: 6px 30px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #f5f5f5;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 16px;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.misc-skills {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px
+}
+
+//End Skill Section
+
+
+// Portfolio
+
+#portfolio {
+    .container {
+        @extend %box-shadow-container;
+
+        a:focus {
+            outline: none;
+        }
+        .portfolioFilter {
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .portfolioFilter a {
+            margin-right: 6px;
+            color: #666;
+            text-decoration: none;
+            border: 1px solid dodgerblue;
+            padding: 4px 15px;
+            border-radius: 50px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .portfolioFilter a.current {
+            background: rgba(184, 216, 255, 0.24);
+            border: 1px solid dodgerblue;
+            color: dodgerblue;
+        }
+        .portfolioContainer {
+            border: 1px solid #eee;
+            border-radius: 3px;
+            padding-top: 20px;
+        }
+        img {
+            width: 300px;
+            margin: 5px;
+        }
+
+        .isotope-item {
+            z-index: 2;
+        }
+
+        .isotope-hidden.isotope-item {
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .isotope,
+        .isotope .isotope-item {
+            /* change duration value to whatever you like */
+            -webkit-transition-duration: 0.8s;
+            -moz-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+        }
+
+        .isotope {
+            -webkit-transition-property: height, width;
+            -moz-transition-property: height, width;
+            transition-property: height, width;
+        }
+
+        .isotope .isotope-item {
+            -webkit-transition-property: -webkit-transform, opacity;
+            -moz-transition-property: -moz-transform, opacity;
+            transition-property: transform, opacity;
+        }
+
+        #portfolio-item {
+            padding: 20px;
+        }
+    }
+
+}
+
+// End Portfolio
+
+// Education Section
+
+#education {
+    .container {
+        @extend %box-shadow-container;
+
+    }
+    .course, .university {
+        padding-top: 10px;
+    }
+
+}
+
+// End Education Section
+
+// Contact Section
+
+#contact {
+    .container {
+        @extend %box-shadow-container;
+
+    }
+    p {
+        color: #666;
+    }
+    .contact-icon {
+        padding-right: 10px;
+    }
+
+    $alpha-color: rgba(17, 123, 255, 0.18);
+    .description {
+        padding: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        font-famil: Roboto, sans-serif;
+    }
+
+    .thanks {
+        padding-top: 10px;
+        font-size: 20px;
+        color: dodgerblue;
+        font-weight: bold;
+    }
+    .info {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .profile-pic {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        -webkit-filter: blur(80%);
+
+        filter: blur(50%);
+
+        transition: filter 0.3s;
+        -webkit-transition: filter 0.3s, -webkit-filter 0.3s;
+
+        &:hover, &:focus {
+
+            -webkit-filter: none;
+            filter: none;
+
+        }
+    }
+
+    a {
+        text-decoration: #666;
+    }
+    .helping-line {
+        font-weight: bold;
+        padding-bottom: 0px;
+    }
+    .list {
+        font-size: large;
+
+    }
+
+}
+
+/// End Contact Section
+
+// Footer Section
+
+
+#footer {
+
+    .container {
+        background: $footer-bg-color;
+        padding: 30px;
+        color: $footer-color;
+
+        .row{
+            div.middle{
+                text-align: center;
+            }
+            div.right{
+                text-align: right;
+
+            }
+
+            div:first-child{
+                padding-left: 130px;
+                padding-top: 5px;
+            }
+
+            div:last-child{
+                padding-left: 90px;
+            }
+        }
+        .social-media-footer{
+            text-align: center;
+        }
+
+    }
+
+    li {
+        font-size: 16px;
+        color: $footer-color;
+        i.fa{
+            color: $footer-link-hover-color;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $footer-color;
+
+        &:hover{
+            color: $footer-link-hover-color;
+            text-decoration: underline;
+        }
+    }
+
+    .conclusion-bar{
+        background: lighten($footer-bg-color, 25%);
+        padding-left: 0px;
+        width: 100%;
+    }
+}
+
+// End Footer Section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Edit this only when you care about the mobile design
+
+// Media Section
+
+@media (max-width: 768px) {
+
+    #hireme {
+        width: 100px;
+        height: 50px;
+        font-size: small;
+        padding: 0px;
+        text-align: center;
+        margin: 0px;
+    }
+
+    #hire {
+        display: block;
+        padding: 10px;
+        margin: 0px;
+
+    }
+
+    .profile-name {
+        font-size: larger;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+
+    }
+
+    .profile-title {
+        font-size: larger;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+
+    }
+
+    .fa-info {
+        color: white;
+        text-align: center;
+        font-size: 18pt;
+    }
+
+    .social-media-bar {
+        max-width: 100%;
+        padding-left: 10px;
+        text-align: center;
+        display: flex;
+
+    }
+
+    #profile-description {
+        p {
+            font-size: smaller;
+            padding-bottom: 0px;
+        }
+    }
+
+    #contacts-bar {
+
+        width: 100%;
+        height: 75px;
+        text-align: center;
+
+        .nav-item {
+
+            font-size: smaller;
+            text-align: center;
+            padding: 0px;
+
+            .nav-link {
+
+                padding: 0px 0px 0px 5px;
+
+            }
+        }
+
+    }
+
+    #navigation-bar {
+
+        width: 100%;
+        padding-left: 2px;
+        padding-right: 2px;
+
+        .nav-item {
+
+            padding: 0px 0px 0px 10px;
+
+            .nav-link {
+
+                padding: 0px;
+                font-size: 16px;
+
+            }
+        }
+    }
+
+    .section {
+
+        margin-top: 2px;
+        text-align: center;
+
+        .container {
+
+            padding: 25px 0px 0px 0px;
+
+            .experience-title {
+
+                text-align: center;
+            }
+
+            .experience-period {
+
+                text-align: center;
+                padding-left: 0px;
+                padding-right: 16px;
+
+            }
+
+            .experience-description {
+
+                .mobile-apps {
+
+                    padding-left: 0px;
+                    list-style: none;
+
+                    .mobile-app-description {
+
+                        text-align: left;
+
+                    }
+                }
+            }
+        }
+
+        .section-heading {
+            padding: 0px;
+        }
+
+        .timeline {
+
+            border-left: 0px;
+            padding-bottom: 5px;
+
+            .item {
+
+                &:before {
+
+                    left: 0px;
+                    top: 2px;
+                }
+
+                &:after {
+                    left: 6px;
+                    top: 8px;
+                }
+
+                .experience-company {
+                    font-size: smaller;
+                }
+            }
+
+        }
+    }
+
+    #skills {
+
+        .other-skills {
+
+            padding-top: 16px;
+
+            .misc-skills {
+
+                padding-top: 40px;
+                padding-left: 0px;
+                padding-right: 0px;
+
+            }
+        }
+    }
+
+    #portfolio {
+        .container .portfolioFilter a {
+            font-size: small;
+        }
+    }
+
+    #contact {
+        .profile-pic {
+            width: 35%;
+        }
+
+        ul.list li {
+            text-align: left;
+        }
+
+        .info {
+            padding-top: 10px;
+            font-size: 19px;
+            text-align: center !important;
+
+        }
+
+        .social-media {
+            width: 100%;
+            padding: 0px
+        }
+
+    }
+
+    #footer {
+        display: none;
+    }
+
+    html {
+        padding: 0px;
+        margin: 0px;
+    }
+
+}
+
+// End Media Section

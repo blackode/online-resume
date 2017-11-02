@@ -1,0 +1,47 @@
+/*
+Error: Invalid CSS after "@import "mixins"": expected "{", was ";"
+        on line 9 of main.scss
+
+4: // author: Ankanna
+5: //email: bugboy@gmx.com
+6: 
+7: //Importing _sass files
+8: 
+9: @import "mixins";
+10: @import "generators";
+11: @import "variables";
+12: @import "themes";
+13: 
+14: // end of importing
+
+Backtrace:
+main.scss:9
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1278:in `expected'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1208:in `expected'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1203:in `tok!'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:677:in `block'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:670:in `ruleset'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:696:in `block_child'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:686:in `block_contents'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:137:in `stylesheet'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:41:in `parse'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:414:in `_to_tree'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/plugin.rb:82:in `update_stylesheets'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+/home/john/.gem/ruby/2.4.0/gems/sass-3.5.3/bin/scss:13:in `<top (required)>'
+/usr/sbin/scss:23:in `load'
+/usr/sbin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"@import \"mixins\"\": expected \"{\", was \";\"\A         on line 9 of main.scss\A \A 4: // author: Ankanna\A 5: //email: bugboy@gmx.com\A 6: \A 7: //Importing _sass files\A 8: \A 9: @import \"mixins\";\A 10: @import \"generators\";\A 11: @import \"variables\";\A 12: @import \"themes\";\A 13: \A 14: // end of importing"; }

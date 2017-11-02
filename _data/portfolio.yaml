@@ -1,0 +1,100 @@
+data:
+  - name: Exlist
+    url: "https://blackode.in/exlist"
+    class: "elixir expack"
+    img: "/images/portfolio/exlist.png"
+    desc: >
+      Extended List Library
+
+  - name: "GenTcp"
+    url: "https://github.com/blackode/gen_tcp"
+    class: "opensouce elixir"
+    img: "/images/portfolio/gentcp.png"
+    desc: >
+      TCP Client & Server Implementation
+
+  - name: Typex
+    url: "https://blackode.in/typex"
+    img: "/images/portfolio/typex.png"
+    class: "expack elixir"
+    desc: >
+      Data Type Checke
+
+  - name: Elixir CLI Animations
+    url: "https://github.com/blackode/elixir_cli_spinners"
+    class: "opensource cli"
+    img: "/images/portfolio/cli-spinners.png"
+    desc: >
+      Spinnig Animations for Command Line Applications
+
+
+  - name: Printex
+    url: "https://blackode.in/exlist"
+    class: "expack elixir"
+    img: "/images/portfolio/printex.png"
+    desc: >
+      Color Log Printer
+
+  - name: IsX
+    url: "https://blackode.in/is_x"
+    img: "/images/portfolio/isx.png"
+    class: "expack elixir"
+    desc: >
+        Data Validator
+
+  - name: Coterie
+    url: "https://github.com/Ahamtech/Coterie"
+    img: "/images/portfolio/coterie.png"
+    class: blackberry
+    desc: >
+      Slack Client
+
+  - name: Printex
+    url: "https://blackode.in/exlist"
+    class: "expack elixir"
+    img: "/images/portfolio/printex.png"
+    desc: >
+      Color Log Printer
+
+  - name: Banana
+    url: "https://github.com/Ahamtech/Banana"
+    img: "/images/portfolio/banana.png"
+    class: blackberry
+    desc: >
+      Asana Client
+
+  - name: Kritus
+    url: "https://github.com/Ahamtech/Kritus"
+    img: "/images/portfolio/kritus.png"
+    class: blackberry
+    desc: >
+      Base Camp Client
+
+  - name: "Guardian Auth"
+    url: "https://github.com/blackode/guardian_auth"
+    class: "opensource elixir"
+    img: "/images/portfolio/guardianauth.png"
+    desc: >
+      The Guardian Authentication Template Using Ecto/Postgresql Elixir Phoenix [ User Authentication ]
+
+  - name: "Mp3 Parser"
+    url: "https://github.com/blackode/mp3parser"
+    class: "opensource elixir cli"
+    img: "/images/portfolio/mp3parser.png"
+    desc: >
+      Command Line Application for parsing the Mp3 file
+
+
+  - name: "GenCoap"
+    url: "https://gitlab.com/blackode/coap"
+    class: "opensource elixir"
+    img: "/images/portfolio/coap.png"
+    desc: >
+      Elixir CoAP Protocol Library
+
+  - name: TB10
+    url: "https://github.com/Ahamtech/TB10"
+    img: "/images/portfolio/tb10.png"
+    class: blackberry
+    desc: >
+      Telegram Client

@@ -1,0 +1,32 @@
+
+<div id="hire">
+    <div class="contianer">
+        <ul class="nav justify-content-end">
+
+            <li class="nav-item">
+                <button class="btn" type="button" id="hireme">
+                    <a class="hire-link active" href="mailto: {{site.email}}"> <i class="fa fa-paper-plane"> </i>   HIRE ME</a>
+                </button>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="social-media-bar">
+    {% include social.html social= site.data.profile.social %}
+</div>
+
+<div id="profile-image">
+
+    <img class="rounded-circle mx-auto d-block img-fluid" src="/images/profile.jpg"></img>
+    <h1 class="profile-name "> {{ site.data.profile.name}} </h1>
+    <h1 class="profile-title text-center"> {{ site.data.profile.title }} </h1>
+
+</div>
+
+<div id="profile-description">
+    <div class="container col-md-6 col-md-offset-3 ">
+        <i class="fa fa-info text-white"></i>  <p class="text-justify" > {{ site.data.profile.description }} </p>
+    </div>
+</div>

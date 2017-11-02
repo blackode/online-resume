@@ -1,0 +1,35 @@
+
+<ul class="nav {{ include.class }} ">
+
+    {% for link in include.links %}
+
+        {% if include.type == "navbar" %}
+
+            <li class="nav-item">
+                <a class="nav-link " href=" {{ link.link }} ">{{ link.title }}</a>
+            </li>
+
+        {% else %}
+            {% if include.type == "contacts-bar" %}
+
+                <li class="nav-item">
+                    <a class="nav-link " href=" {{ link.link }} "><i class="{{ link.icon-class }} contact-icon "></i>{{ link.title }}</a>
+                </li>
+
+            {% else %}
+
+                <li class="nav-item">
+
+                    <span class="nav-link " > {{ link.title }} </span>
+
+                </li>
+
+            {% endif %}
+
+        {% endif %}
+
+
+    {% endfor %}
+
+
+</ul>

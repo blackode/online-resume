@@ -1,0 +1,37 @@
+<div class="container">
+
+    <h3 class="text-sm-center section-heading"> Professional Skills </h3>
+    <h4 class="text-sm-center skills-title"> Top Skills </h4>
+
+    <div class="row top-skills">
+        {% for skill in include.skills.topskills %}
+
+            <div class="col-md-4">
+                <h4 class="skill-name text-center theme-color" >{{ skill.name }}</h4>
+                <p class="skill-level text-center " >{{ skill.level }}</p>
+                <div class="skill-desc text-center lead"> {{ skill.desc }}</div>
+
+            </div>
+
+         {% endfor %}
+    </div>
+
+    <div class="other-skills col-md-12">
+
+        <h4 class="text-sm-center skills-title "> Other Skills </h4>
+        <div class="misc-skills">
+
+
+        {% for skill in include.skills.otherskills %}
+        <span type="" class="skill-tag text-center"> {{ skill }} </span>
+        {% endfor %}
+
+
+
+
+
+
+        </div>
+
+    </div>
+</div>

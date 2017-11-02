@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScssLintProjectComponent">
+    <option name="scssLintConfigFile" value="$USER_HOME$/bin/scss-lint-config.yml" />
+    <option name="scssLintExecutable" value="$USER_HOME$/.gem/ruby/2.4.0/bin/scss-lint" />
+    <option name="pluginEnabled" value="true" />
+  </component>
+</project>

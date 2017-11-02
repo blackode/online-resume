@@ -1,0 +1,32 @@
+topskills:
+  - name: Elixir/Phoenix
+    level: Expert
+    desc: >
+      Scalable and maintainable applications API Development and reliable package developer at Hex. Command line application
+      development and Distributed Code development across remote nodes. Prominent in GenServer Processes and Supervisor
+      Control over the GenServer in an application building process.
+
+  - name: JavaScript/NodeJs
+    level: Advanced
+    desc: >
+      JSON REST API development. Scalable Network Applications development. Full Stack Development with jade template engine.
+      Good in the areas of Ajax requests,Document models, data visualisation, animations, plugin development.
+      Knowledgeable in promises and closures resolving.
+
+  - name: EmberJs
+    level: Advanced
+    desc: >
+      Client API developement to build websites with rich and complex user interactions. Expertises in the areas of multilevel Routing and Multilevel Component handling. Self
+      Non Destructive and re-usable Ember-Addon Development. Capable of building highly customizable Templates & Graphical
+      Data Visualization.
+
+
+otherskills:
+  - C/C++
+  - Python
+  - SASS
+  - Erlang
+  - CoffeScript
+  - Git
+  - Graphic Design
+  - Vfx Design Adobe

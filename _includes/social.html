@@ -1,0 +1,32 @@
+<!--
+
+If you want customize the links, you suppose edit the file
+_data/profile.yaml
+under social section
+
+new account is added to accounts which is separated by , (coma) and you have to add the link
+
+Example
+
+social:
+    accounts: "facebook,your-new-account"
+    your-new-account: replace-account-url
+
+Here order matters. The way you order the way you get.
+
+-->
+
+<div class="socializer"
+     data-features="48px,circle,float,icon-grey,bdr-dark,bg-none,pad"
+     data-sites=" {{ include.social.accounts }}"
+     data-meta-link=""
+     data-meta-title=""
+     data-meta-facebook="{{ include.social.facebook }}"
+     data-meta-behance="{{ include.social.behance }}"
+     data-meta-youtube="{{ include.social.youtube }}"
+     data-meta-twitter=" {{ include.social.twitter }}"
+     data-meta-medium="{{ include.social.medium }}"
+     data-meta-linkedin=" {{ include.social.linkedin }}"
+     data-meta-github=" {{ inlcude.social.github }}">
+
+</div>
