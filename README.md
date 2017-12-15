@@ -1,6 +1,9 @@
 # Programmers Online Resume Template
 ## INTRO
 This is a Responsive Resume template for programmers. It is developed using [Jekyll](https://jekyllrb.com)
+
+![main-screen-shot]('./screenshots/main.png')
+
 ## So what is Jekyll all about?
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like [Markdown](https://daringfireball.net/projects/markdown/)) and our [Liquid](https://shopify.github.io/liquid/) renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind [GitHub Pages](pages.github.com), which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.
 
