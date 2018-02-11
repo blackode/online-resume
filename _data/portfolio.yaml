@@ -1,6 +1,6 @@
 data:
   - name: Exlist
-    url: "https://blackode.in/exlist"
+    url: "https://github.com/blackode/exlist"
     class: "elixir expack"
     img: "/images/portfolio/exlist.png"
     desc: >
@@ -14,7 +14,7 @@ data:
       TCP Client & Server Implementation
 
   - name: Typex
-    url: "https://blackode.in/typex"
+    url: "https://github.com/blackode/typex"
     img: "/images/portfolio/typex.png"
     class: "expack elixir"
     desc: >
@@ -27,16 +27,8 @@ data:
     desc: >
       Spinnig Animations for Command Line Applications
 
-
-  - name: Printex
-    url: "https://blackode.in/exlist"
-    class: "expack elixir"
-    img: "/images/portfolio/printex.png"
-    desc: >
-      Color Log Printer
-
   - name: IsX
-    url: "https://blackode.in/is_x"
+    url: "https://github.com/blackode/is_x"
     img: "/images/portfolio/isx.png"
     class: "expack elixir"
     desc: >
@@ -50,7 +42,7 @@ data:
       Slack Client
 
   - name: Printex
-    url: "https://blackode.in/exlist"
+    url: "https://github.com/blackode/printex"
     class: "expack elixir"
     img: "/images/portfolio/printex.png"
     desc: >
